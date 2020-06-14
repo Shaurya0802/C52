@@ -1,18 +1,21 @@
 h1{
     color :  #A52A2A;
-   
-    text-align: center;
 
     font-family : Arial;
 
     font-style : bold;
+
+    margin-left : 30px;
 }
 
 .header{
     background-color: #4169E1;
     display : flex;
     justify-content : space-between;
-    text-align: center;
+}
+
+.header *{
+    border : solid;
 }
 
 .grid{
@@ -34,8 +37,47 @@ p,h2{
 
 .aboutme{
     color : #0000FF;
+}
+
+a:link{
+    color : #FF0000;
+}
+
+.Menu{
+    margin-right : 30px;
+    margin-top : 15px;
+}
+
+.Menu a{
+    margin-left : 30px;
+}
+
+.Item{
+    position : relative;
+}
+
+.Item p{
+    position : absolute;
     
-    text-align: center;
+    top : 50%;
+
+    left : 50%;
+
+    transform : translate(-50%,-50%);
+
+    opacity : 0;
+}
+
+.Item:hover p{
+    opacity : 1;
+}
+
+.Item:hover img{
+    opacity : 0.33;
+}
+
+a:visited{
+    color : #FF0000;
 }
 
 body{
